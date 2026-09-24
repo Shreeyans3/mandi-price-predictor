@@ -216,3 +216,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- MANDATORY SECURITY & CLEANLINESS ---
+# API keys and credentials
+.env
+*.env
+secrets.json
+
+# Local Python environments and dependencies
+venv/
+env/
+node_modules/
+
+# PyTorch weights, checkpoints, and large raw data dumps
+*.pth
+*.pt
+*.onnx
+*.pkl
+ml_research/raw_data/
+backend/data/*.csv
+!backend/data/clean_sample.csv
